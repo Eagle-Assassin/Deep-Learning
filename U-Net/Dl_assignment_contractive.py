@@ -324,6 +324,11 @@ print('The model is trained and the one smaple output is displayed.')
 print('Question 1:\n Plot the t-SNE (use inbuilt function) on the embeddings obtained using the respective auto-encoders.\nColor the clusters using the respective ground-truth class labels.')
 time.sleep(2)
 
+#Using test Data set
+train_dataset=datasets.MNIST(root='data',
+                             train=False,
+                             download=True,
+                             transform=transform)
 
 # Function to plot t-SNE
 def plot_tsne(model):
