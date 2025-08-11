@@ -1,0 +1,19 @@
+Data set/fashion-mnist_train.csv
+Data set/fmnist_small.csv
+Data set/matmob_data_sample.csv
+Data set/model_comparison.csv
+MLOps Assignment/Assignment-data-diabetes.csv
+U-Net/AccuracyComparison.csv
+U-Net/AccuracyComparison.csv
+U-Net/data/MNIST/raw/train-labels-idx1-ubyte.gz
+U-Net/data/MNIST/raw/train-labels-idx1-ubyte
+U-Net/data/MNIST/raw/train-images-idx3-ubyte
+U-Net/data/MNIST/raw/t10k-images-idx3-ubyte.gz
+U-Net/data/MNIST/raw/t10k-labels-idx1-ubyte
+U-Net/Unet_Contractive_autoencoder.pkl
+U-Net/Unet_sparse_autoencoder.pkl
+U-Net/data/MNIST/raw/t10k-images-idx3-ubyte
+U-Net/data/MNIST/raw/train-images-idx3-ubyte.gz
+U-Net/data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+U-Net/Unet_Contractive_autoencoder_old_way.pkl
+U-Net/AccuracyComparison.csv
