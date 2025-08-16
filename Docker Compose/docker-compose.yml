@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  fronend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+      - database
+    networks:
+      - my-custom-network
+  backend:
+    build: ./backend  
+    ports: 
+      - "5001:5000"
+    environment:
+      DB_HOST: database
+      DB_USER: postgres
+      DB_PASS: database
+      DB_NAME: postgres
+    depends_on:
+      - database
+    networks:
+      - my-custom-network
+
+  database:
+    image: postgres:16-alpine
+    restart: always
+    environment: #These environment variables are usually mentioned in the documentation of the docker hub image or it can be pulled from google
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_db: postgres
+    volumes: 
+      - pgdata:/var/lib/postgresql/data #this is the way you use arrays in a yml , wit a dash(-)
+    networks:
+      - my-custom-network
+volumes:
+  pgdata:
+networks:
+  my-custom-network:
+    driver: bridge
